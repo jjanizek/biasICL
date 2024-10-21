@@ -94,7 +94,7 @@ def main(
         ]
         for demo in demo_examples:
             prompt += f"""<<IMG>>Given the image above, answer the following question using the specified format. 
-Question: What is in the image above?
+Question: Which description best fits the skin lesion in the image above?
 Choices: A. Benign, B. Malignant
 Answer Choice: {demo[1]}
 """
@@ -105,7 +105,7 @@ Answer Choice: {demo[1]}
             qn_idx = idx + 1
 
             prompt += f"""<<IMG>>Given the image above, answer the following question using the specified format. 
-Question {qn_idx}: What is in the image above?
+Question {qn_idx}: Which description best fits the skin lesion in the image above?
 Choices {qn_idx}: A. Benign, B. Malignant
 
 """
